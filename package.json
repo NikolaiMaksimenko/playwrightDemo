@@ -1,7 +1,5 @@
 {
-  "dependencies": {
-    "global": "^4.4.0",
-    "playwright": "^1.18.1",
-    "yarn": "^1.22.17"
+  "devDependencies": {
+    "@playwright/test": "^1.18.1"
   }
 }
