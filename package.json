@@ -1,4 +1,10 @@
 {
+<<<<<<< HEAD
+=======
+  "dependencies": {
+    "playwright": "^1.18.1"
+  },
+>>>>>>> 06ffb405a1b060e8fa61c91ce78be16a4a6eac45
   "devDependencies": {
     "@playwright/test": "^1.18.1"
   }
