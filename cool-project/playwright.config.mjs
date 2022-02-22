@@ -19,10 +19,6 @@ const config = {
             name: 'chromium',
             use: { ...devices['Desktop Chrome'] },
         },
-        {
-            name: 'firefox',
-            use: { ...devices['Desktop Firefox'] },
-        },
     ],
     use: {
         launchOptions: {

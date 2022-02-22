@@ -20,7 +20,7 @@ test.describe('Tests of the search feature', () => {
 
     test('Test with empty input field', async ({ page }) => {
         await page.goto('https://www.google.com/', { waitUntil: 'networkidle' });
-        const googleSearch = await page.waitForSelector('sdssdsd', {
+        const googleSearch = await page.waitForSelector(googleLocator, {
             state: 'visible',
             timeout: 5000,
         });
