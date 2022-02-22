@@ -3,7 +3,6 @@ import { test } from '@playwright/test';
 const googleLocator = '[class="gLFyf gsfi"]';
 
 test.describe('Tests of the search feature', () => {
-
     test('input "Google" text and search it', async ({ page }) => {
         await page.goto('https://www.google.com/', { waitUntil: 'networkidle' });
         const googleSearch = await page.waitForSelector(googleLocator, {
