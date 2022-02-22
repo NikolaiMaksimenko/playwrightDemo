@@ -1,4 +1,4 @@
-import { EbayPage } from './page-object/apple';
+import { EbayPage } from '../page-object/apple';
 import { expect, test } from '@playwright/test';
 import fs from 'fs';
 import {
@@ -10,13 +10,14 @@ import {
     itemTitle,
     notSpecified,
     secondPrice,
-} from './page-object/locators';
+} from '../page-object/locators';
 
 test.describe('EBAY test cases', () => {
     test.describe('Apple', () => {
         test('get CSV file from 4 pages with "not specified" filter', async ({ page }) => {
             const ebayPage = new EbayPage(page);
             await ebayPage.navigate();
+
             const electronicCategory = await ebayPage.findLocator(categoriesFilter, 'Electronics');
 
             await electronicCategory.hover();

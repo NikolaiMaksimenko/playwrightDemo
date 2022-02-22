@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "test": "npx playwright test --headed"
+        "test": "npx playwright test --config=./cool-project/playwright.config.mjs"
     },
     "dependencies": {
         "playwright": "^1.18.1"
