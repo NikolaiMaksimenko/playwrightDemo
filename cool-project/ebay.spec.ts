@@ -35,8 +35,8 @@ test.describe('EBAY test cases', () => {
 
             await Promise.all([page.waitForNavigation(), notSpecifiedOption.click()]);
 
-            const secondPriceInFilterRange = await ebayPage.findLocator(secondPrice, '$290');
-            await Promise.all([page.waitForNavigation(), secondPriceInFilterRange.click()]);
+            const secondPriceInFilterRange = await page.$$(secondPrice);
+            await Promise.all([page.waitForNavigation(), secondPriceInFilterRange[1].click()]);
 
             const iterations = [1, 2, 3, 4, 5];
             const titleArray = [];
@@ -47,7 +47,7 @@ test.describe('EBAY test cases', () => {
                     hasText: `${pageNumber}`,
                 });
 
-                if (pageNumber > 1) {
+                if (pageNumber > iterations[0]) {
                     await Promise.all([
                         page.waitForNavigation({ waitUntil: 'load' }),
                         currentPage.click(),
