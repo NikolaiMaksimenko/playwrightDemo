@@ -1,17 +1,18 @@
 import { expect, test } from '@playwright/test';
+import { inputTextAndWaitNavigation } from './example-tests/helpers';
 
-const googleLocator = '[class="gLFyf gsfi"]';
+export const googleLocator = '[class="gLFyf gsfi"]';
 
 test('Arthurs test', async ({ page }) => {
     await page.goto('https://www.google.com/', { waitUntil: 'networkidle' });
-    const search = await page.waitForSelector(googleLocator, {
-        state: 'visible',
-    });
-    await search.type('Wikipedia', { delay: 10 });
-    await Promise.all([
-        page.waitForNavigation({ waitUntil: 'networkidle' }),
-        page.keyboard.press('Enter'),
-    ]);
+    await inputTextAndWaitNavigation('Wikipedia', page);
+
+    expect(page.locator('h3')).toHaveText('Википедия');
+});
+
+test('Arthurs test', async ({ page }) => {
+    await page.goto('https://www.google.com/', { waitUntil: 'networkidle' });
+    await inputTextAndWaitNavigation('Wikipedia', page);
 
     expect(page.locator('h3')).toHaveText('Википедия');
 });

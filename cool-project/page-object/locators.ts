@@ -1,7 +1,3 @@
-import { Page } from '@playwright/test';
-
-let page: Page;
-
 export const itemTitle = '[class="s-item__info clearfix"] [class="s-item__title"]';
 export const itemPrice = '[class="s-item__details clearfix"] [class="s-item__price"]';
 
