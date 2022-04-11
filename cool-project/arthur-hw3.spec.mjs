@@ -11,8 +11,9 @@ import { expect, test } from '@playwright/test';
 
         await page.locator('[class=b-guidancecard__title]', {hasText: 'Socket AM4'}).click();
         await page.waitForSelector('[class="s-item__details clearfix"] [class="s-item__price"]');
-        const priceText = await page.$$('[class="s-item__price"]');
+        const priceText = await page.locator('[class="s-item__price"]').allInnerTexts();
 
-        expect(console.log(priceText));
+        expect(console.log(priceText[0]));
+  
     })
 })
