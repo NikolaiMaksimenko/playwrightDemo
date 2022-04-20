@@ -4,9 +4,9 @@
     },
     "dependencies": {
         "npm-check-updates": "^12.5.8",
-        "playwright": "^1.19.1"
+        "playwright": "^1.20.2"
     },
     "devDependencies": {
-        "@playwright/test": "^1.19.1"
+        "@playwright/test": "^1.20.2"
     }
 }
