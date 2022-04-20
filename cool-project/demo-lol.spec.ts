@@ -3,7 +3,7 @@ import { inputTextAndWaitNavigation } from './example-tests/helpers';
 
 export const googleLocator = '[class="gLFyf gsfi"]';
 
-test('Arthurs test', async ({ page }) => {
+test('Arthurs test 1', async ({ page }) => {
     await page.goto('https://www.google.com/', { waitUntil: 'networkidle' });
     await inputTextAndWaitNavigation('Wikipedia', page);
 
