@@ -1,10 +1,10 @@
 import { Page } from '@playwright/test';
 
-export class EbayPage {
-    public constructor(protected page: Page) {}
+export class EbayPageHome {
+    public constructor(protected readonly page: Page) {}
 
-    public async navigate() {
-        await this.page.goto('https://www.ebay.com/');
+    public async navigate(allUrls: string) {
+        await this.page.goto(allUrls);
     }
 
     public async findLocator(selector: string, textId?: string) {

@@ -9,10 +9,10 @@ const config: PlaywrightTestConfig = {
         threshold: 60000,
     },
     // directory to search for tests
-    testDir: './cool-project/example-tests/',
+    testDir: './cool-project',
 
     // tests name match pattern
-    testMatch: '*.spec-lol.ts',
+    testMatch: '*.spec-e2e.ts',
 
     // global timeout for tests
     timeout: 20000,
