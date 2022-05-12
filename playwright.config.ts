@@ -9,7 +9,7 @@ const config: PlaywrightTestConfig = {
         threshold: 60000,
     },
     // directory to search for tests
-    testDir: './cool-project',
+    testDir: './cool-project/example-tests',
 
     // tests name match pattern
     testMatch: '*.spec-e2e.ts',
@@ -26,7 +26,7 @@ const config: PlaywrightTestConfig = {
         //
         launchOptions: {
             // to  slow down tests locally for debug ( DONT USE ON CI )
-            slowMo: 1500,
+            // slowMo: 1500,
             // not required flag for chrome , to speed up tests
             args: ['--use-gl=egl'],
         },

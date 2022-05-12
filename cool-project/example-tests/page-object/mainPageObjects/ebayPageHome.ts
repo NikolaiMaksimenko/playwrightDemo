@@ -1,13 +1,12 @@
 import { Page } from '@playwright/test';
+import { EbayPopover } from './ebay-popovers/ebay-popovers';
 
-export class EbayPageHome {
-    public constructor(protected readonly page: Page) {}
-
-    public async navigate(allUrls: string) {
-        await this.page.goto(allUrls);
+export class EbayPageHome extends EbayPopover {
+    public constructor(protected readonly page: Page) {
+        super(page);
     }
 
-    public async findLocator(selector: string, textId?: string) {
-        return this.page.locator(selector, { hasText: textId });
+    public async navigate() {
+        await this.page.goto('https://www.ebay.com/');
     }
 }
