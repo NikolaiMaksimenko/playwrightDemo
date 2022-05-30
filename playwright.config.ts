@@ -12,7 +12,7 @@ const config: PlaywrightTestConfig = {
     testDir: './cool-project/example-tests',
 
     // tests name match pattern
-    testMatch: '*.spec-e2e.ts',
+    testMatch: ['*.spec-e2e.ts', '*.spec-visual.ts'],
 
     // global timeout for tests
     timeout: 20000,

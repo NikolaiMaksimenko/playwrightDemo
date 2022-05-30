@@ -1,0 +1,125 @@
+{
+  "cookies": [
+    {
+      "sameSite": "Lax",
+      "name": "s",
+      "value": "CgAD4ACBiljnvMTVhYmYyMzIxODEwYWE3MDI3NjZkZThiZmZlYzRhMmGb+ln4",
+      "domain": ".ebay.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true
+    },
+    {
+      "sameSite": "Lax",
+      "name": "ebay",
+      "value": "%5Esbf%3D%23000000%5E",
+      "domain": ".ebay.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true
+    },
+    {
+      "sameSite": "Lax",
+      "name": "__deba",
+      "value": "_yR7Pm9BnHsFuD-uyfPnf25I3SPI9NWdaMgWJSeex4En_-LtDeUgOQEjlbE8C8SMXR8UW1J2_XMwSXzXGqPFGP770lUM_vPxn1DXnbf50wpP5eGFDM2sjFwKKUSDPXELzDtILrKwS-Wr4VZ_QVrmwQ==",
+      "domain": ".ebay.com",
+      "path": "/",
+      "expires": 1669477999.106796,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "ak_bmsc",
+      "value": "CB058A2B4BB4032213506820181D47DE~000000000000000000000000000000~YAAQDNT1V62f2BOBAQAApPKrFQ/Zw+SRiIdtrCocDBRw4Qw52KzBPY29pjNpxhnstZXEsaWSjwYor0W0YXvXgNo/O8eRmlS7NbIE4XmbHJJV1yVi6GzDFW4WqOHpKtozxmZTbHjh1IszdrNdvXfGfg+/O7r8ayAhMX+yw6qfWs8uT5NkXvs4MJhgRGCudgnx6pZhUpqDc35IQENR371kaYXX7HyiYacKOGADZGlZwMYALIxNFHk+5BPbj4UF83YPhumqGDzPQMmhHFGOihhxIhXxX7jO7F+r/wpWl/qcESPJOXj+c9T6M1MGgfuFFA4K2kd9+zTyx80LOBu0+6O7gUjRew3QFaAhmM/0FE44IfAknPVWNsHo7QLQlcX6zLafL4KClu1KEQ==",
+      "domain": ".ebay.com",
+      "path": "/",
+      "expires": 1653933199.106852,
+      "httpOnly": true,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "__ssds",
+      "value": "2",
+      "domain": ".ebay.com",
+      "path": "/",
+      "expires": 1669481599,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "__ssuzjsr2",
+      "value": "a9be0cd8e",
+      "domain": ".ebay.com",
+      "path": "/",
+      "expires": 1669481599,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "__uzmaj2",
+      "value": "0404aedf-1d3f-4ae1-8721-e34dd974a670",
+      "domain": ".ebay.com",
+      "path": "/",
+      "expires": 1669481599,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "__uzmbj2",
+      "value": "1653925999",
+      "domain": ".ebay.com",
+      "path": "/",
+      "expires": 1669481599,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "__uzmcj2",
+      "value": "109691015699",
+      "domain": ".ebay.com",
+      "path": "/",
+      "expires": 1669481599,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "__uzmdj2",
+      "value": "1653925999",
+      "domain": ".ebay.com",
+      "path": "/",
+      "expires": 1669481599,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "nonsession",
+      "value": "BAQAAAYA5+AiKAAaAADMABWR2G/AwNDExMgDKACBmV09wMTVhYmYyMzIxODEwYWE3MDI3NjZkZThiZmZlYzRhMmEAywABYpTveDKzE46BgUGyXXYM/W07+56IRMJwdA**",
+      "domain": ".ebay.com",
+      "path": "/",
+      "expires": 1716998000.371132,
+      "httpOnly": true,
+      "secure": true
+    },
+    {
+      "sameSite": "Lax",
+      "name": "dp1",
+      "value": "bpbf/%236000c0000000000000000064761bf0^bl/UA66574f70^",
+      "domain": ".ebay.com",
+      "path": "/",
+      "expires": 1716998000.371265,
+      "httpOnly": false,
+      "secure": true
+    }
+  ],
+  "origins": []
+}
