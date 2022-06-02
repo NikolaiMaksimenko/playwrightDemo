@@ -3,7 +3,7 @@ import { PlaywrightTestConfig, WebServerConfig } from '@playwright/test';
 const config: PlaywrightTestConfig = {
     // max failed tests num
     maxFailures: 2,
-
+    globalSetup: require.resolve('./cool-project/example-tests/global-setup'),
     reportSlowTests: {
         max: 10,
         threshold: 60000,
@@ -30,7 +30,6 @@ const config: PlaywrightTestConfig = {
             // not required flag for chrome , to speed up tests
             args: ['--use-gl=egl'],
         },
-
         screenshot: 'only-on-failure',
         video: 'retain-on-failure',
     },
@@ -45,6 +44,18 @@ const config: PlaywrightTestConfig = {
                 outputFolder: './cool-project/test-results/',
             },
         ],
+    ],
+
+    projects: [
+        {
+            name: 'authorized',
+            use: {
+                storageState: 'navigationState.json',
+            },
+        },
+        {
+            name: 'non-authorized',
+        },
     ],
 
     // !!! CORE FEATURE , to create a local env for test from scratch

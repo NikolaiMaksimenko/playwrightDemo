@@ -1,10 +1,9 @@
 {
     "scripts": {
         "test": "npx playwright test --config=./playwright.config.ts",
+        "test:auth": "npx playwright test --config=./playwright.config.ts --grep @auth --project=non-authorized",
+        "test:basic": "npx playwright test --config=./playwright.config.ts --project=authorized",
         "test:ebay": "npx playwright test"
-    },
-    "dependencies": {
-        "playwright": "^1.18.1"
     },
     "devDependencies": {
         "@playwright/test": "^1.18.1"
